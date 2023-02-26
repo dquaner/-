@@ -1,9 +1,10 @@
-package org.dyy.dp.factory.factorymethod;
+package org.dyy.dp.factory.absfactory;
 
-import org.dyy.dp.factory.factorymethod.order.BJOrderPizza;
+import org.dyy.dp.factory.absfactory.order.BJPizzaFactory;
+import org.dyy.dp.factory.absfactory.order.OrderPizza;
 
 public class BJPizzaStore {
     public static void main(String[] args) {
-        new BJOrderPizza();
+        new OrderPizza(new BJPizzaFactory());
     }
 }

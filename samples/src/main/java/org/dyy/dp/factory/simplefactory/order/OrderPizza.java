@@ -7,11 +7,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class PizzaOrder {
+public class OrderPizza {
 
     private SimplePizzaFactory pizzaFactory;
 
-    public PizzaOrder(SimplePizzaFactory simplePizzaFactory) {
+    public OrderPizza(SimplePizzaFactory simplePizzaFactory) {
         setPizzaFactory(simplePizzaFactory);
 
         Pizza pizza;

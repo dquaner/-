@@ -1,25 +1,20 @@
-package org.dyy.dp.factory.simplefactory.order;
+package org.dyy.dp.factory.factorymethod.order;
 
-import org.dyy.dp.factory.simplefactory.pizza.Pizza;
-import org.dyy.dp.factory.simplefactory.pizza.SimplePizzaFactory;
+import org.dyy.dp.factory.factorymethod.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class OrderPizza {
+public abstract class OrderPizza {
 
-    private SimplePizzaFactory pizzaFactory;
-
-    public OrderPizza(SimplePizzaFactory simplePizzaFactory) {
-        setPizzaFactory(simplePizzaFactory);
-
+    public OrderPizza() {
         Pizza pizza;
         String orderType;
 
         do {
             orderType = getType();
-            pizza = pizzaFactory.createPizza(orderType);
+            pizza = createPizza(orderType);
             if (pizza != null) {
                 pizza.prepare();
                 pizza.bake();
@@ -31,9 +26,7 @@ public class OrderPizza {
         } while (true);
     }
 
-    public void setPizzaFactory(SimplePizzaFactory simplePizzaFactory) {
-        this.pizzaFactory = simplePizzaFactory;
-    }
+    protected abstract Pizza createPizza(String pizzaType);
 
     public String getType() {
         try {
@@ -45,4 +38,5 @@ public class OrderPizza {
             return "";
         }
     }
+
 }

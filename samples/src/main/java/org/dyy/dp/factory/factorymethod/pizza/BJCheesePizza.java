@@ -1,9 +1,9 @@
-package org.dyy.dp.factory.uc.pizza;
+package org.dyy.dp.factory.factorymethod.pizza;
 
-public class CheesePizza extends Pizza {
+public class BJCheesePizza extends Pizza {
     @Override
     public void prepare() {
-        setName("CheesePizza");
+        setName("BJCheesePizza");
         System.out.println("preparing..." + name);
     }
 }

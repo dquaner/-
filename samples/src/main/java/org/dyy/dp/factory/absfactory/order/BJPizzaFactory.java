@@ -1,13 +1,13 @@
-package org.dyy.dp.factory.factorymethod.order;
+package org.dyy.dp.factory.absfactory.order;
 
-import org.dyy.dp.factory.factorymethod.pizza.BJCheesePizza;
-import org.dyy.dp.factory.factorymethod.pizza.BJPepperPizza;
-import org.dyy.dp.factory.factorymethod.pizza.Pizza;
+import org.dyy.dp.factory.absfactory.pizza.BJCheesePizza;
+import org.dyy.dp.factory.absfactory.pizza.BJPepperPizza;
+import org.dyy.dp.factory.absfactory.pizza.Pizza;
 
-public class BJOrderPizza extends OrderPizza {
+public class BJPizzaFactory implements AbstractPizzaFactory {
 
     @Override
-    protected Pizza createPizza(String pizzaType) {
+    public Pizza createPizza(String pizzaType) {
         if ("cheese".equals(pizzaType)) {
             return new BJCheesePizza();
         } else if("pepper".equals(pizzaType)) {

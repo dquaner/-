@@ -1,17 +1,17 @@
 package org.dyy.dp.factory.absfactory.order;
 
-import org.dyy.dp.factory.absfactory.pizza.BJCheesePizza;
-import org.dyy.dp.factory.absfactory.pizza.BJPepperPizza;
+import org.dyy.dp.factory.absfactory.pizza.LDCheesePizza;
+import org.dyy.dp.factory.absfactory.pizza.LDPepperPizza;
 import org.dyy.dp.factory.absfactory.pizza.Pizza;
 
-public class BJPizzaFactory implements AbstractPizzaFactory {
+public class LDPizzaFactory implements AbstractPizzaFactory {
 
     @Override
     public Pizza createPizza(String pizzaType) {
         if ("cheese".equals(pizzaType)) {
-            return new BJCheesePizza();
+            return new LDCheesePizza();
         } else if("pepper".equals(pizzaType)) {
-            return new BJPepperPizza();
+            return new LDPepperPizza();
         } else {
             return null;
         }

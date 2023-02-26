@@ -1,8 +1,4 @@
-package org.dyy.dp.factory.simplefactory.order;
-
-import org.dyy.dp.factory.simplefactory.pizza.CheesePizza;
-import org.dyy.dp.factory.simplefactory.pizza.GreekPizza;
-import org.dyy.dp.factory.simplefactory.pizza.Pizza;
+package org.dyy.dp.factory.simplefactory.pizza;
 
 public class SimplePizzaFactory {
 
@@ -12,6 +8,8 @@ public class SimplePizzaFactory {
             return new GreekPizza();
         } else if("cheese".equals(pizzaType)) {
             return new CheesePizza();
+        } else if("pepper".equals(pizzaType)) {
+            return new PepperPizza();
         } else {
             return null;
         }

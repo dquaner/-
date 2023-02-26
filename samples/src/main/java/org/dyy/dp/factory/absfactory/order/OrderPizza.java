@@ -1,7 +1,6 @@
-package org.dyy.dp.factory.simplefactory.order;
+package org.dyy.dp.factory.absfactory.order;
 
-import org.dyy.dp.factory.simplefactory.pizza.Pizza;
-import org.dyy.dp.factory.simplefactory.pizza.SimplePizzaFactory;
+import org.dyy.dp.factory.absfactory.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,17 +8,17 @@ import java.io.InputStreamReader;
 
 public class OrderPizza {
 
-    private SimplePizzaFactory pizzaFactory;
+    private AbstractPizzaFactory pizzaFactory;
 
-    public OrderPizza(SimplePizzaFactory simplePizzaFactory) {
-        setPizzaFactory(simplePizzaFactory);
+    public OrderPizza(AbstractPizzaFactory pizzaFactory) {
+        setPizzaFactory(pizzaFactory);
 
         Pizza pizza;
         String orderType;
 
         do {
             orderType = getType();
-            pizza = pizzaFactory.createPizza(orderType);
+            pizza = this.pizzaFactory.createPizza(orderType);
             if (pizza != null) {
                 pizza.prepare();
                 pizza.bake();
@@ -31,8 +30,8 @@ public class OrderPizza {
         } while (true);
     }
 
-    public void setPizzaFactory(SimplePizzaFactory simplePizzaFactory) {
-        this.pizzaFactory = simplePizzaFactory;
+    public void setPizzaFactory(AbstractPizzaFactory pizzaFactory) {
+        this.pizzaFactory = pizzaFactory;
     }
 
     public String getType() {

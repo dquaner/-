@@ -1,4 +1,4 @@
-package org.dyy.dp.factory.uc.pizza;
+package org.dyy.dp.factory.factorymethod.pizza;
 
 public abstract class Pizza {
 

@@ -1,4 +1,4 @@
-package org.dyy.dp.factory.factorymethod.pizza;
+package org.dyy.dp.factory.absfactory.pizza;
 
 public class LDCheesePizza extends Pizza {
     @Override

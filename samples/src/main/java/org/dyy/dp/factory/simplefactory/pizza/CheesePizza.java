@@ -1,4 +1,4 @@
-package org.dyy.dp.factory.uc.pizzastore.pizza;
+package org.dyy.dp.factory.simplefactory.pizza;
 
 public class CheesePizza extends Pizza {
     @Override

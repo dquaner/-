@@ -1,9 +1,9 @@
-package org.dyy.dp.factory.uc;
+package org.dyy.dp.factory.factorymethod;
 
-import org.dyy.dp.factory.uc.order.OrderPizza;
+import org.dyy.dp.factory.factorymethod.order.BJOrderPizza;
 
-public class PizzaStore {
+public class BJPizzaStore {
     public static void main(String[] args) {
-        new OrderPizza();
+        new BJOrderPizza();
     }
 }

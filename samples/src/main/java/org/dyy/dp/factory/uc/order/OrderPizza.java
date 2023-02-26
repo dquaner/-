@@ -8,9 +8,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class PizzaOrder {
+public class OrderPizza {
 
-    public PizzaOrder() {
+    public OrderPizza() {
         Pizza pizza = null;
         String orderType;
 

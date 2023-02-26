@@ -1,17 +1,15 @@
 package org.dyy.dp.factory.factorymethod.order;
 
-import org.dyy.dp.factory.factorymethod.pizza.BJCheesePizza;
-import org.dyy.dp.factory.factorymethod.pizza.BJPepperPizza;
-import org.dyy.dp.factory.factorymethod.pizza.Pizza;
+import org.dyy.dp.factory.factorymethod.pizza.*;
 
-public class BJOrderPizza extends OrderPizza {
+public class LDOrderPizza extends OrderPizza {
 
     @Override
     protected Pizza createPizza(String pizzaType) {
         if ("cheese".equals(pizzaType)) {
-            return new BJCheesePizza();
+            return new LDCheesePizza();
         } else if("pepper".equals(pizzaType)) {
-            return new BJPepperPizza();
+            return new LDPepperPizza();
         } else {
             return null;
         }

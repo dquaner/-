@@ -1,15 +1,17 @@
-package org.dyy.dp.factory.simplefactory.pizza;
+package org.dyy.dp.factory.factorymethod.order;
 
-public class SimplePizzaFactory {
+import org.dyy.dp.factory.factorymethod.pizza.BJCheesePizza;
+import org.dyy.dp.factory.factorymethod.pizza.BJPepperPizza;
+import org.dyy.dp.factory.factorymethod.pizza.Pizza;
 
-    // 简单工厂模式也叫静态工厂模式，可以将该方法定义为静态方法
-    public Pizza createPizza(String pizzaType) {
-        if ("greek".equals(pizzaType)) {
-            return new GreekPizza();
-        } else if("cheese".equals(pizzaType)) {
-            return new CheesePizza();
+public class BJOrderPizza extends OrderPizza {
+
+    @Override
+    protected Pizza createPizza(String pizzaType) {
+        if ("cheese".equals(pizzaType)) {
+            return new BJCheesePizza();
         } else if("pepper".equals(pizzaType)) {
-            return new PepperPizza();
+            return new BJPepperPizza();
         } else {
             return null;
         }
