@@ -1,6 +1,8 @@
 package org.dyy.dp.factory.factorymethod.order;
 
-import org.dyy.dp.factory.factorymethod.pizza.*;
+import org.dyy.dp.factory.factorymethod.pizza.LDCheesePizza;
+import org.dyy.dp.factory.factorymethod.pizza.LDPepperPizza;
+import org.dyy.dp.factory.factorymethod.pizza.Pizza;
 
 public class LDOrderPizza extends OrderPizza {
 
