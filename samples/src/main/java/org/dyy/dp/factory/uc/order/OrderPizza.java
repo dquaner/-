@@ -1,8 +1,8 @@
-package org.dyy.dp.factory.simplefactory.pizzastore.order;
+package org.dyy.dp.factory.uc.order;
 
-import org.dyy.dp.factory.simplefactory.pizzastore.pizza.CheesePizza;
-import org.dyy.dp.factory.simplefactory.pizzastore.pizza.GreekPizza;
-import org.dyy.dp.factory.simplefactory.pizzastore.pizza.Pizza;
+import org.dyy.dp.factory.uc.pizza.CheesePizza;
+import org.dyy.dp.factory.uc.pizza.GreekPizza;
+import org.dyy.dp.factory.uc.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;
