@@ -1,5 +1,6 @@
 Based on the messages collected by the Arex agent, we have provided a replay library for QA to easily write replay test cases.
 
+At its core, our framework embodies a paradigm shift in testing methodologies.  Embracing a reactive stream-based design, it empowers us to streamline our testing procedures while enhancing efficiency and code readability.  By liberating developers from the complexities of concurrency and synchronization issues, we're able to focus more on crafting robust test cases and less on wrestling with code intricacies.
 Overall, our framework employs reactive stream-based design,
 1. It enables more efficient memory usage by extracting business logic from template code, liberating code from concurrency and synchronization issues, while also enhancing code readability.
 
@@ -15,3 +16,27 @@ Let me explain the details,
 5. Finally, we send the comparison results of replays in different environments to Superset for visualization. Additionally, we provide callbacks for users to handle errors that occur during the replay process, as well as signals indicating replay completion.
 
 That concludes the introduction to the replay framework. Now, I will initiate a test case to replay several trades to the UAT and QA environments of cash, and hand it over to Violet to demonstrate our report module.
+
+**Introduction:**
+Ladies and gentlemen,
+
+Today, I'm excited to share with you a groundbreaking development in our QA processes - the introduction of the Replay Framework.  Developed upon the data collected by our Arex agent, this framework promises to revolutionize how we conduct replay testing for QA.
+
+**Framework Overview:**
+At its core, our framework embodies a paradigm shift in testing methodologies.  Embracing a reactive stream-based design, it empowers us to streamline our testing procedures while enhancing efficiency and code readability.  By liberating developers from the complexities of concurrency and synchronization issues, we're able to focus more on crafting robust test cases and less on wrestling with code intricacies.
+
+**Key Features:**
+Let's delve into some of the key features that make our framework a game-changer:
+- **Data Source Access:** With a simple method, users can effortlessly fetch trade data, setting the stage for seamless testing.
+- **Flexible APIs:** Our framework offers a plethora of APIs, including filter and map, allowing users to infuse their own business logic into the testing process.
+- **Predefined Operations:** We've gone the extra mile to provide predefined operations like message filtering and enrichment, saving valuable time and effort.
+- **Multi-Environment Testing:** Gone are the days of testing in isolation.  Our framework enables users to replay data across multiple cash environments, ensuring comprehensive testing coverage.
+- **Visualization and Error Handling:** We've integrated visualization capabilities through Superset and equipped the framework with robust error handling mechanisms, ensuring smooth sailing throughout the testing journey.
+
+**Test Case Example:**
+To illustrate the power of our framework, let's walk through a test case scenario.  Imagine replaying several trades to both UAT and QA cash environments.  With our framework, what once seemed like a daunting task is now a breeze, thanks to its intuitive design and seamless execution.
+
+**Conclusion:**
+In conclusion, the Replay Framework marks a significant milestone in our QA endeavors.  It embodies our commitment to innovation and excellence, empowering us to raise the bar in testing standards.  As we embark on this transformative journey, let's embrace the possibilities that lie ahead and forge a path towards a future where testing is not just a necessity but a catalyst for progress.
+
+Thank you.
