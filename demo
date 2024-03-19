@@ -1,0 +1,17 @@
+Based on the messages collected by the Arex agent, we have provided a replay library for QA to easily write replay test cases.
+
+Overall, our framework employs reactive stream-based design,
+1. It enables more efficient memory usage by extracting business logic from template code, liberating code from concurrency and synchronization issues, while also enhancing code readability.
+
+The latter part of the test case examples demonstrates how to use our replay framework.
+As you can see, only a small amount of code is needed to complete a replay test.
+
+Let me explain the details,
+
+1. We provide a simple method to fetch trade data sources. Users only need to pass the time range to the cashReceiver to obtain a Flux stream that continuously sends message payloads.
+2. Our framework offers APIs like filter and map, allowing users to add their own business logic to the data.
+3. We provide some predefined message-based operations, such as message filtering and necessary enrichment before replay. Users can directly call these functions to reduce repetitive programming efforts.
+4. Once users have prepared the data (e.g., performed filtering, enrichment, etc.), the fork API allows them to replay the same data to multiple cash environments for testing.
+5. Finally, we send the comparison results of replays in different environments to Superset for visualization. Additionally, we provide callbacks for users to handle errors that occur during the replay process, as well as signals indicating replay completion.
+
+That concludes the introduction to the replay framework. Now, I will initiate a test case to replay several trades to the UAT and QA environments of cash, and hand it over to Violet to demonstrate our report module.
