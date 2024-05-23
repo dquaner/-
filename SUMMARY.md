@@ -17,4 +17,4 @@
 
 ## 行为型模式 <a href="#behavioral-patterns" id="behavioral-patterns"></a>
 
-* [观察者模式](behavioral-patterns/guan-cha-zhe-mo-shi.md)
+* [观察者模式](behavioral-patterns/observer-pattern.md)
