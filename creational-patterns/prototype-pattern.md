@@ -12,7 +12,7 @@ description: Prototype Pattern
 
 **传统实现方法：**
 
-示例代码：[Sample](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/prototype/uc)
+示例代码：[Sample](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/creational/prototype/uc)
 
 ![](../images/原型模式/uc.png)
 
@@ -31,7 +31,7 @@ description: Prototype Pattern
 
 ## 原型模式的实现
 
-示例代码：[Sample](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/prototype/improve)
+示例代码：[Sample](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/creational/prototype/improve)
 
 ![](../images/原型模式/prototype.png)
 
@@ -103,7 +103,7 @@ protected <T> T doGetBean(String name, @Nullable Class<T> requiredType, @Nullabl
 2. 对于引用数据类型的成员变量，比如某个数组，某个类的对象等，浅拷贝会进行引用传递，也就是只将该成员变量的引用值（内存地址）复制一份给新的对象。两个对象的引用类型成员变量实际上都指向同一个实例，因此在这种情况下，修改一个对象中的引用类型成员变量会影响另一个对象的该成员变量。
 3. 前面的克隆羊实例就是浅拷贝。浅拷贝使用默认的 `clone()` 方法实现。
 
-示例代码：[Sample](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/prototype/shallowcopy)
+示例代码：[Sample](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/creational/prototype/shallowcopy)
 
 **深拷贝的介绍：**
 
@@ -112,7 +112,7 @@ protected <T> T doGetBean(String name, @Nullable Class<T> requiredType, @Nullabl
 3. 深拷贝的实现方式1：重写 `clone()` 方法来实现深拷贝。如果引用类型里面还包含很多引用类型，或者内层引用类型的类里面又包含多层引用类型，那么通过 `clone()` 方法逐一拷贝每一个引用类型来实现深拷贝的方法就会很麻烦。
 4. 深拷贝的实现方式2：通过对象序列化来实现深拷贝（推荐）。序列化就是将对象写到流中的过程，写到流中的对象是原有对象的一个拷贝，而原对象仍然存在于内存中。通过序列化实现的拷贝不仅可以复制对象本身，而且可以复制其引用的成员对象。需要注意的是序列化对象的类必须实现 `Serializable` 接口，否则无法实现序列化操作。
 
-示例代码：[Sample](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/prototype/deepcopy)
+示例代码：[Sample](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/creational/prototype/deepcopy)
 
 ## 注意事项和细节说明
 

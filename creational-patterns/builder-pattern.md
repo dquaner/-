@@ -13,7 +13,7 @@ description: Builder Pattern
 
 **传统实现方法：**
 
-示例代码：[HouseBuilder](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/builder/uc)
+示例代码：[HouseBuilder](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/creational/builder/uc)
 
 ![](../images/建造者模式/uc.png)
 
@@ -38,7 +38,7 @@ description: Builder Pattern
 
 ## 建造者模式的实现
 
-示例代码：[HouseBuilder](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/builder/improve)
+示例代码：[HouseBuilder](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/creational/builder/improve)
 
 ![](../images/建造者模式/builder.png)
 

@@ -16,7 +16,7 @@ description: Factory Pattern
 
 **传统实现方法：**
 
-示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/factory/uc)
+示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/creational/factory/uc)
 
 ![](../images/工厂模式/uc.png)
 
@@ -34,7 +34,7 @@ description: Factory Pattern
 
 ### 简单工厂模式的实现
 
-示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/factory/simplefactory)
+示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/creational/factory/simplefactory)
 
 ![](../images/工厂模式/sf.png)
 
@@ -60,7 +60,7 @@ description: Factory Pattern
 
 使用工厂方法模式的设计方案：将 Pizza 实例化的逻辑抽象成抽象方法，在不同的点餐子类中具体实现。
 
-示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/factory/factorymethod)
+示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/creational/factory/factorymethod)
 
 ![](../images/工厂模式/fm.png)
 
@@ -76,7 +76,7 @@ description: Factory Pattern
 
 ### 抽象工厂模式的实现
 
-示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/factory/absfactory)
+示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/creational/factory/absfactory)
 
 ![](../images/工厂模式/abs.png)
 

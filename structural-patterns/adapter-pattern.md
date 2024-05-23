@@ -31,7 +31,7 @@ description: Adapter Pattern
 
 ![](../images/适配器模式/class-adapter.png)
 
-示例代码：[VoltageAdapter](../samples/src/main/java/org/dyy/dp/adapter/classadapter/VoltageAdapter.java)
+示例代码：[VoltageAdapter](../samples/src/main/java/org/dyy/structural/adapter/classadapter/VoltageAdapter.java)
 
 ### 类适配器的注意事项和细节
 
@@ -51,7 +51,7 @@ description: Adapter Pattern
 
 ![](../images/适配器模式/object-adapter.png)
 
-示例代码：[VoltageAdapter](../samples/src/main/java/org/dyy/dp/adapter/objectadapter/VoltageAdapter.java)
+示例代码：[VoltageAdapter](../samples/src/main/java/org/dyy/structural/adapter/objectadapter/VoltageAdapter.java)
 
 ### 对象适配器的注意事项和细节
 
@@ -264,4 +264,4 @@ Spring 创建了一个适配器接口 `HandlerAdapter` ：
 
 ![HandlerAdapter](../images/适配器模式/handler-adapter-3.png)
 
-代码示例：[DispatcherServlet](../samples/src/main/java/org/dyy/dp/adapter/spring/DispatcherServlet.java)
+代码示例：[DispatcherServlet](../samples/src/main/java/org/dyy/structural/adapter/spring/DispatcherServlet.java)
