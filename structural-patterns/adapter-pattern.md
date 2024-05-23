@@ -17,7 +17,7 @@ description: Adapter Pattern
 3. 用户调用适配器转化出来的目标接口方法，而适配器会去调用被适配者的相关接口方法；
 4. 用户收到反馈结果，感觉自己是和目标接口交互的。
 
-![](../适配器模式/images/working-principle.png)
+![](../images/适配器模式/working-principle.png)
 
 ## 类适配器模式
 
@@ -29,7 +29,7 @@ description: Adapter Pattern
 
 以生活中充电器的例子来讲解适配器，充电器本身相当于 Adapter，220V 交流电相当于 src（即被适配者），我们的 dst（即目标）是 5V 直流电。
 
-![](../适配器模式/images/class-adapter.png)
+![](../images/适配器模式/class-adapter.png)
 
 示例代码：[VoltageAdapter](../samples/src/main/java/org/dyy/dp/adapter/classadapter/VoltageAdapter.java)
 
@@ -49,7 +49,7 @@ description: Adapter Pattern
 
 ### 应用实例
 
-![](../适配器模式/images/object-adapter.png)
+![](../images/适配器模式/object-adapter.png)
 
 示例代码：[VoltageAdapter](../samples/src/main/java/org/dyy/dp/adapter/objectadapter/VoltageAdapter.java)
 
@@ -145,7 +145,7 @@ SprintBoot 中的 `HandlerAdapter` 就使用了适配器模式。
 
 ### SpringMVC 处理请求的流程回顾
 
-![](../适配器模式/images/spring-mvc.png)
+![](../images/适配器模式/spring-mvc.png)
 
 ### 源码分析
 
@@ -250,11 +250,11 @@ protected void doDispatch(HttpServletRequest request, HttpServletResponse respon
 
 Spring 创建了一个适配器接口 `HandlerAdapter` ：
 
-![](../适配器模式/images/handler-adapter-1.png)
+![](../images/适配器模式/handler-adapter-1.png)
 
 该适配器接口 `HandlerAdapter` 的实现子类使得每一种 controller 有自己对应的适配器实现类，来达到不同的实现方式。也就是说，实际上是通过 adapter 来调用具体的 handler（controller）的处理方法：
 
-![HandlerAdapter](../适配器模式/images/handler-adapter-2.png)
+![HandlerAdapter](../images/适配器模式/handler-adapter-2.png)
 
 ### 使用 HandlerAdapter 的原因分析
 
@@ -262,6 +262,6 @@ Spring 创建了一个适配器接口 `HandlerAdapter` ：
 
 ### 手写 HandlerAdapter
 
-![HandlerAdapter](../适配器模式/images/handler-adapter-3.png)
+![HandlerAdapter](../images/适配器模式/handler-adapter-3.png)
 
 代码示例：[DispatcherServlet](../samples/src/main/java/org/dyy/dp/adapter/spring/DispatcherServlet.java)

@@ -18,7 +18,7 @@ description: Factory Pattern
 
 示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/factory/uc)
 
-![](../工厂模式/images/uc.png)
+![](../images/工厂模式/uc.png)
 
 **分析：**
 
@@ -36,7 +36,7 @@ description: Factory Pattern
 
 示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/factory/simplefactory)
 
-![](../工厂模式/images/sf.png)
+![](../images/工厂模式/sf.png)
 
 ## 工厂方法模式
 
@@ -62,7 +62,7 @@ description: Factory Pattern
 
 示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/factory/factorymethod)
 
-![](../工厂模式/images/fm.png)
+![](../images/工厂模式/fm.png)
 
 ## 抽象工厂模式
 
@@ -78,7 +78,7 @@ description: Factory Pattern
 
 示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/factory/absfactory)
 
-![](../工厂模式/images/abs.png)
+![](../images/工厂模式/abs.png)
 
 ## 工厂模式在 JDK 中应用的源码分析
 

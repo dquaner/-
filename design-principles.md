@@ -140,13 +140,13 @@ class Vehicle {
 
 先看一张图：
 
-![](设计原则/images/interface\_segregation\_principle1.png)
+![](images/设计原则/interface\_segregation\_principle1.png)
 
 class A 通过接口 Interface1 依赖 class B，class C 通过接口 Interface1 依赖 class D，如果 Interface1 对于 A 和 C 来说不是最小接口，那么 B 和 D 必须去实现它们不需要的方法。
 
 按接口隔离原则应该这样处理： 将接口 Interface1 拆分为独立的几个接口，A 和 C 分别与它们需要的接口建立依赖关系。
 
-![](设计原则/images/interface\_segregation\_principle2.png)
+![](images/设计原则/interface\_segregation\_principle2.png)
 
 ### 应用实例
 
@@ -556,7 +556,7 @@ System.out.println("11+3+9=" + b.func2(11,3));
 
 通常的做法是，让父类和子类都继承一个更通用的类，原有的继承关系去掉，采用依赖，聚合，组合等关系代替。
 
-![](设计原则/images/liskov\_substitution\_principle1.png)
+![](images/设计原则/liskov\_substitution\_principle1.png)
 
 ```java
 class Base { 
@@ -610,7 +610,7 @@ System.out.println("1-8=" + b.func3(1,8));
 
 完成一个画图形的功能，类图设计如下：
 
-![](设计原则/images/open\_closed\_principle1.png)
+![](images/设计原则/open\_closed\_principle1.png)
 
 _Example 1._
 
@@ -913,11 +913,11 @@ class SchoolManager {
 
 继承：
 
-![](设计原则/images/composite\_reuse\_principle1.png)
+![](images/设计原则/composite\_reuse\_principle1.png)
 
 使用以下三种方式替代：
 
-| <p>1. 依赖：<br><img src="设计原则/images/composite_reuse_principle2.png" alt=""></p> | <p>2. 聚合：<br><img src="设计原则/images/composite_reuse_principle3.png" alt=""></p> | <p>3. 组合：<br><img src="设计原则/images/composite_reuse_principle4.png" alt=""></p> |
+| <p>1. 依赖：<br><img src="images/设计原则/composite_reuse_principle2.png" alt=""></p> | <p>2. 聚合：<br><img src="images/设计原则/composite_reuse_principle3.png" alt=""></p> | <p>3. 组合：<br><img src="images/设计原则/composite_reuse_principle4.png" alt=""></p> |
 | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
 
 ## 小结：设计原则的核心思想

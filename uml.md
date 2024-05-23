@@ -6,7 +6,7 @@ UML (Unified Modeling Language) 统一建模语言，是一种用于软件系统
 
 UML 本身是一套符号规定，这些符号用于描述模型中的各个元素和它们之间的关系。比如类、接口、实现、泛化（继承）、依赖、组合、聚合等。在网上找到一张图可以解释 UML 中的六种关系：
 
-![UML 类图](UML类图/images/whole.png)
+![UML 类图](images/UML类图/whole.png)
 
 注：
 
@@ -39,7 +39,7 @@ public class PersonService {
 }
 ```
 
-![](UML类图/images/dependence.png)
+![](images/UML类图/dependence.png)
 
 小结： 依赖关系即类中用到了另一个类，可以是
 
@@ -65,7 +65,7 @@ public class PersonService extends DaoSupport {
 }
 ```
 
-![](UML类图/images/generalization.png)
+![](images/UML类图/generalization.png)
 
 ## 实现（Implementation）
 
@@ -84,7 +84,7 @@ public class PersonService implements IPersonService {
 }
 ```
 
-![](UML类图/images/implementation.png)
+![](images/UML类图/implementation.png)
 
 ## 关联（association）
 
@@ -111,7 +111,7 @@ public class IDCard {
 }
 ```
 
-![](UML类图/images/association.png)
+![](images/UML类图/association.png)
 
 ## 聚合（Aggregation）
 
@@ -131,7 +131,7 @@ public class Mouse {}
 public class Monitor {}
 ```
 
-![](UML类图/images/aggregation.png)
+![](images/UML类图/aggregation.png)
 
 ## 组合（Composition）
 
@@ -151,6 +151,6 @@ public class IDCard {}
 public class Head {}
 ```
 
-![](UML类图/images/composition.png)
+![](images/UML类图/composition.png)
 
 但是，如果程序在 Person 实体中定义了对 IDCard 的级联删除，即删除 Person 时连同 IDCard 一起删除，那么 IDCard 与 Person 就是组合了。

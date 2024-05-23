@@ -14,7 +14,7 @@ description: Prototype Pattern
 
 示例代码：[Sample](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/prototype/uc)
 
-![](../原型模式/images/uc.png)
+![](../images/原型模式/uc.png)
 
 **分析：**
 
@@ -33,7 +33,7 @@ description: Prototype Pattern
 
 示例代码：[Sample](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/prototype/improve)
 
-![](../原型模式/images/prototype.png)
+![](../images/原型模式/prototype.png)
 
 说明：
 

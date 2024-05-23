@@ -15,7 +15,7 @@ description: Builder Pattern
 
 示例代码：[HouseBuilder](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/builder/uc)
 
-![](../建造者模式/images/uc.png)
+![](../images/建造者模式/uc.png)
 
 **分析：**
 
@@ -40,7 +40,7 @@ description: Builder Pattern
 
 示例代码：[HouseBuilder](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/builder/improve)
 
-![](../建造者模式/images/builder.png)
+![](../images/建造者模式/builder.png)
 
 ## 建造者模式在 JDK 中应用的源码分析
 
