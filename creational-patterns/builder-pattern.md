@@ -1,3 +1,7 @@
+---
+description: Builder Pattern
+---
+
 # 建造者模式
 
 ## 应用实例

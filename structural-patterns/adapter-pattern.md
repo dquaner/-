@@ -1,3 +1,7 @@
+---
+description: Adapter Pattern
+---
+
 # 适配器模式
 
 ## 适配器模式基本介绍

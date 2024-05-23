@@ -1,3 +1,7 @@
+---
+description: Prototype Pattern
+---
+
 # 原型模式
 
 ## 用例分析

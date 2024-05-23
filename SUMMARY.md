@@ -14,3 +14,7 @@
 ## 结构型模式 <a href="#structural-patterns" id="structural-patterns"></a>
 
 * [适配器模式](structural-patterns/adapter-pattern.md)
+
+## 行为型模式 <a href="#behavioral-patterns" id="behavioral-patterns"></a>
+
+* [观察者模式](behavioral-patterns/guan-cha-zhe-mo-shi.md)
