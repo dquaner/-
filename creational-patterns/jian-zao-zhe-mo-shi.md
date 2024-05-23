@@ -11,7 +11,7 @@
 
 示例代码：[HouseBuilder](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/builder/uc)
 
-<img src="images/uc.png" width="450"/>
+![](../建造者模式/images/uc.png)
 
 **分析：**
 
@@ -20,6 +20,7 @@
 3. 解决方案：将产品和产品建造过程进行结耦，也就是建造者模式。
 
 ## 建造者模式基本介绍
+
 建造者模式又叫生成器模式，是一种对象构建模式。它可以将复杂对象的建造过程抽象出来（抽象类别），是这个抽象过程的不同实现方法可以构造出不同表现（属性）的对象。
 
 建造者模式是一步一步生成一个复杂的对象，它允许用户只通过指定复杂对象的类型和内容就可以构建它们，用户不需要知道内部的具体构建细节。
@@ -35,7 +36,7 @@
 
 示例代码：[HouseBuilder](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/builder/improve)
 
-<img src="images/builder.png" width="700"/>
+![](../建造者模式/images/builder.png)
 
 ## 建造者模式在 JDK 中应用的源码分析
 

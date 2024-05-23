@@ -14,7 +14,7 @@
 
 示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/factory/uc)
 
-<img src="images/uc.png" width="650"/>
+![](../工厂模式/images/uc.png)
 
 **分析：**
 
@@ -32,7 +32,7 @@
 
 示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/factory/simplefactory)
 
-<img src="images/sf.png" width="800"/>
+![](../工厂模式/images/sf.png)
 
 ## 工厂方法模式
 
@@ -58,7 +58,7 @@
 
 示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/factory/factorymethod)
 
-<img src="images/fm.png" width="700"/>
+![](../工厂模式/images/fm.png)
 
 ## 抽象工厂模式
 
@@ -74,7 +74,7 @@
 
 示例代码：[PizzaStore](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/factory/absfactory)
 
-<img src="images/abs.png" width="700"/>
+![](../工厂模式/images/abs.png)
 
 ## 工厂模式在 JDK 中应用的源码分析
 
@@ -155,11 +155,13 @@ public abstract class Calendar {
 将实例化对象的代码提取出来，放到一个类中统一管理和维护，达到和主项目依赖关系的解耦，从而提高项目的可扩展性和可维护性。
 
 **三种工厂设计模式：**
+
 1. 简单工厂模式
 2. 工厂方法模式
 3. 抽象工厂模式
 
 **设计模式的依赖倒置原则：**
+
 1. 创建对象时，把 new 类的动作放在一个工厂的方法中，并返回类的实例；也就是说，变量不要直接持有具体类的引用。
 2. 不要让类继承具体类，而是继承抽象类或实现接口。
 3. 不要覆盖父类中已经实现的方法。

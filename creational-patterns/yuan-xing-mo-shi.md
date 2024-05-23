@@ -10,7 +10,7 @@
 
 示例代码：[Sample](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/prototype/uc)
 
-<img src="images/uc.png" width="300"/>
+![](../原型模式/images/uc.png)
 
 **分析：**
 
@@ -29,9 +29,10 @@
 
 示例代码：[Sample](https://github.com/dquaner/Design-Pattern/tree/main/samples/src/main/java/org/dyy/dp/prototype/improve)
 
-<img src="images/prototype.png" width="700"/>
+![](../原型模式/images/prototype.png)
 
 说明：
+
 1. Prototype：原型类，声明一个克隆自己的方法
 2. ConcretePrototype：具体的原型类，实现克隆自己的操作
 3. Client：让一个原型对象克隆自己，从而创建一个新的对象（即属性一样）
@@ -112,6 +113,7 @@ protected <T> T doGetBean(String name, @Nullable Class<T> requiredType, @Nullabl
 ## 注意事项和细节说明
 
 原型模式的注意事项和细节说明：
+
 1. 创建新的对象比较复杂时，可以利用原型模式简化对象的创建过程，同时也能够提高效率。
 2. 不用重新初始化对象，而是动态地获得对象运行时的状态。
 3. 如果原始对象发生变化（增加或者减少属性），其他克隆对象的属性也会发生相应的变化，无需修改代码。

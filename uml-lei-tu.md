@@ -1,12 +1,15 @@
 # UML 类图
 
+## UML 类图
+
 UML (Unified Modeling Language) 统一建模语言，是一种用于软件系统分析和设计的语言工具，它用于帮助软件开发人员进行思考和记录思路的结果。
 
 UML 本身是一套符号规定，这些符号用于描述模型中的各个元素和它们之间的关系。比如类、接口、实现、泛化（继承）、依赖、组合、聚合等。在网上找到一张图可以解释 UML 中的六种关系：
 
-![UML 类图](images/whole.png)
+![UML 类图](UML类图/images/whole.png)
 
 注：
+
 1. Driver 到 Human 应该属于继承关系；
 2. 聚合关系是整体和部分的关系，整体和部分可以分开；
 3. 组合关系也是整体和部分的关系，但是整体和部分不能分开；
@@ -19,11 +22,11 @@ UML 本身是一套符号规定，这些符号用于描述模型中的各个元�
 
 这里主要介绍 UML 类图，类图用于描述类本身的组成和类之间的各种静态关系，是 UML 图中最核心的。
 
-# 依赖（Dependence）
+## 依赖（Dependence）
 
 只要在类中用到了另一个类，那么它们之间就存在依赖关系。
 
-<i>Example:</i>
+_Example:_
 
 ```java
 public class PersonService {
@@ -36,20 +39,20 @@ public class PersonService {
 }
 ```
 
-<img src="images/dependence.png" width="800"/>
+![](UML类图/images/dependence.png)
 
-小结：
-依赖关系即类中用到了另一个类，可以是
+小结： 依赖关系即类中用到了另一个类，可以是
+
 1. 类的成员属性
 2. 方法的返回类型
 3. 方法接收的参数类型
 4. 方法中使用到的变量类型
 
-# 泛化（Generalization）
+## 泛化（Generalization）
 
 泛化关系实际上就是继承关系，它是依赖关系的特例。
 
-<i>Example:</i>
+_Example:_
 
 ```java
 public abstract class DaoSupport {
@@ -62,13 +65,13 @@ public class PersonService extends DaoSupport {
 }
 ```
 
-<img src="images/generalization.png" width="300"/>
+![](UML类图/images/generalization.png)
 
-# 实现（Implementation）
+## 实现（Implementation）
 
 实现关系也是依赖关系的特例。
 
-<i>Example:</i>
+_Example:_
 
 ```java
 public interface IPersonService {
@@ -81,15 +84,16 @@ public class PersonService implements IPersonService {
 }
 ```
 
-<img src="images/implementation.png" width="350"/>
+![](UML类图/images/implementation.png)
 
-# 关联（association）
+## 关联（association）
 
 关联关系表示类与类之间的联系，也是依赖关系的特例。
-- 关联关系具有导航性：即双向关系或单向关系。
-- 关联关系具有多重性：如“1”（表示有且仅有1个），“0...”（表示0个或者多个），“0,1”（表示0个或者1个），“n...m”（表示n到m个都可以），“m...”（表示至少m个）。
 
-<i>Example:</i>
+* 关联关系具有导航性：即双向关系或单向关系。
+* 关联关系具有多重性：如“1”（表示有且仅有1个），“0...”（表示0个或者多个），“0,1”（表示0个或者1个），“n...m”（表示n到m个都可以），“m...”（表示至少m个）。
+
+_Example:_
 
 ```java
 // 单向一对一关系
@@ -107,15 +111,15 @@ public class IDCard {
 }
 ```
 
-<img src="images/association.png" width="350"/>
+![](UML类图/images/association.png)
 
-# 聚合（Aggregation）
+## 聚合（Aggregation）
 
 聚合关系表示的是整体和部分的关系，整体与部分可以分开。聚合关系是关联关系的特例，所以它具有关联关系的导航性与多重性。
 
 例如：一台电脑由键盘、显示器、鼠标等组成；组成电脑的各个配件是可以从电脑上分离出来的。
 
-<i>Example:</i>
+_Example:_
 
 ```java
 public class Computer {
@@ -127,15 +131,15 @@ public class Mouse {}
 public class Monitor {}
 ```
 
-<img src="images/aggregation.png" width="350"/>
+![](UML类图/images/aggregation.png)
 
-# 组合（Composition）
+## 组合（Composition）
 
 组合关系也是整体与部分的关系，但是整体与部分不可以分开。组合关系也是关联关系的特例。
 
 例如：Head 与 Person 是组合关系，IDCard 与 Person 是聚合关系。
 
-<i>Example:</i>
+_Example:_
 
 ```java
 public class Person {
@@ -147,6 +151,6 @@ public class IDCard {}
 public class Head {}
 ```
 
-<img src="images/composition.png" width="300"/>
+![](UML类图/images/composition.png)
 
 但是，如果程序在 Person 实体中定义了对 IDCard 的级联删除，即删除 Person 时连同 IDCard 一起删除，那么 IDCard 与 Person 就是组合了。

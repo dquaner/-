@@ -13,21 +13,24 @@
 3. 用户调用适配器转化出来的目标接口方法，而适配器会去调用被适配者的相关接口方法；
 4. 用户收到反馈结果，感觉自己是和目标接口交互的。
 
-<img src="images/working-principle.png" width="500"/>
+![](../适配器模式/images/working-principle.png)
 
 ## 类适配器模式
 
 ### 基本介绍
+
 类适配器模式创建一个 Adapter 类，通过继承 src 类，实现 dst 接口，完成 src 到 dst 的适配。
 
 ### 应用实例
+
 以生活中充电器的例子来讲解适配器，充电器本身相当于 Adapter，220V 交流电相当于 src（即被适配者），我们的 dst（即目标）是 5V 直流电。
 
-<img src="images/class-adapter.png" width="500"/>
+![](../适配器模式/images/class-adapter.png)
 
-示例代码：[VoltageAdapter](https://github.com/dquaner/Design-Pattern/blob/main/samples/src/main/java/org/dyy/dp/adapter/classadapter/VoltageAdapter.java)
+示例代码：[VoltageAdapter](../samples/src/main/java/org/dyy/dp/adapter/classadapter/VoltageAdapter.java)
 
 ### 类适配器的注意事项和细节
+
 1. 由于 Java 是单继承机制，所以类适配器需要继承 src 类这一点是它的一个缺点，因为这要求 dst 必须为一个接口，有一定的局限性；
 2. src 类的方法在 Adapter 中都会暴露出来，也增加了使用的成本。
 3. 类适配器的优点：由于其继承了 src 类，所以它可以根据需求重写 src 类的方法，使得 Adapter 的灵活性增强了。
@@ -35,23 +38,26 @@
 ## 对象适配器模式
 
 ### 基本介绍
+
 1. 对象适配器模式的基本思路和类适配器相同，只是将 Adapter 类做修改，不是继承 src 类，而是持有 src 类的实例，以解决接口兼容性的问题。即 Adapter 类持有 src 类，实现 dst 接口，完成 src 到 dst 的适配。
 2. 这一改动满足“合成复用原则”，即：在系统中尽量使用关联关系来替代继承关系。
 3. 对象适配器模式是适配器模式常用的一种。
 
 ### 应用实例
 
-<img src="images/object-adapter.png" width="500"/>
+![](../适配器模式/images/object-adapter.png)
 
-示例代码：[VoltageAdapter](https://github.com/dquaner/Design-Pattern/blob/main/samples/src/main/java/org/dyy/dp/adapter/objectadapter/VoltageAdapter.java)
+示例代码：[VoltageAdapter](../samples/src/main/java/org/dyy/dp/adapter/objectadapter/VoltageAdapter.java)
 
 ### 对象适配器的注意事项和细节
+
 1. 对象适配器和类适配器其实算是同一种思想，只不过实现方式不同。根据合成复用原则，使用组合代替继承，所以它解决了类适配器必须继承 src 的局限性问题，也不再要求 dst 必须是接口。
 2. 对象适配器的使用成本更低，更灵活。
 
 ## 接口适配器模式
 
 ### 基本介绍
+
 1. 一些书籍称接口适配器模式为适配器模式或缺省适配器模式（Default Adapter Pattern）。
 2. 当不需要实现接口提供的全部方法时，可以先设计一个抽象类实现接口，并为该接口中的每个方法提供一个默认实现（空方法），那么该抽象类的子类可以有选择的覆盖父类的某些方法来实现需求。
 3. 接口适配器适用于一个接口不想使用其所有方法的情况。
@@ -135,7 +141,7 @@ SprintBoot 中的 `HandlerAdapter` 就使用了适配器模式。
 
 ### SpringMVC 处理请求的流程回顾
 
-<img src="images/spring-mvc.png" width="500"/>
+![](../适配器模式/images/spring-mvc.png)
 
 ### 源码分析
 
@@ -240,11 +246,11 @@ protected void doDispatch(HttpServletRequest request, HttpServletResponse respon
 
 Spring 创建了一个适配器接口 `HandlerAdapter` ：
 
-<img src="images/handler-adapter-1.png" width="600"/>
+![](../适配器模式/images/handler-adapter-1.png)
 
 该适配器接口 `HandlerAdapter` 的实现子类使得每一种 controller 有自己对应的适配器实现类，来达到不同的实现方式。也就是说，实际上是通过 adapter 来调用具体的 handler（controller）的处理方法：
 
-![HandlerAdapter](./images/handler-adapter-2.png)
+![HandlerAdapter](../适配器模式/images/handler-adapter-2.png)
 
 ### 使用 HandlerAdapter 的原因分析
 
@@ -252,6 +258,6 @@ Spring 创建了一个适配器接口 `HandlerAdapter` ：
 
 ### 手写 HandlerAdapter
 
-![HandlerAdapter](./images/handler-adapter-3.png)
+![HandlerAdapter](../适配器模式/images/handler-adapter-3.png)
 
-代码示例：[DispatcherServlet](https://github.com/dquaner/Design-Pattern/blob/main/samples/src/main/java/org/dyy/dp/adapter/spring/DispatcherServlet.java)
+代码示例：[DispatcherServlet](../samples/src/main/java/org/dyy/dp/adapter/spring/DispatcherServlet.java)
